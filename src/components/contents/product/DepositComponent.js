@@ -5,7 +5,7 @@ class DepositComponent extends Component{
     render(){
         return(
             <>
-                <h1>예금....</h1>
+                <h1>예금...</h1>
             </>            
         )
     }
