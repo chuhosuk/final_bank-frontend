@@ -1,5 +1,5 @@
 import { Component } from "react";
-import {BrowserRouter,Link,Route, Routes,Outlet} from 'react-router-dom';
+import {Route, Routes} from 'react-router-dom';
 import MainComponents from "../contents/MainComponents";
 import SavingComponent from "../contents/product/saving/SavingComponent";
 import DepositComponent from "../contents/product/deposit/DepositComponent";
@@ -7,6 +7,8 @@ import AccountComponent from "../contents/acSearch/AccountComponent";
 import DormantComponent from "../contents/acSearch/DormantComponent";
 import AcDepositComponent from "../contents/acSearch/AcDepositComponent";
 import InfoComponent from "../contents/customer/InfoComponent";
+import InfoDetailComponent from "../contents/customer/InfoDetailCoponent";
+
 import WithdrawalComponent from "../contents/customer/WithdrawalComponent";
 import ChatComponent from "../contents/csCenter/ChatComponent";
 import NoticeComponent from "../contents/csCenter/NoticeComponent";
@@ -20,6 +22,8 @@ import LoanComponent from "../contents/product/loan/LoanComponent";
 import SavingComponentDetail from "../contents/product/saving/SavingComponentDetail";
 import SavingComponentEdit from "../contents/product/saving/SavingComponentEdit";
 import SavingComponentAdd from "../contents/product/saving/SavingComponetAdd";
+import NoticeAddComponent from "../contents/csCenter/NoticeAddComponent";
+import NoticeDetailCoponent from "../contents/csCenter/NoticeDetailComponent";
 
 
 class RouteComponent extends Component{
@@ -52,8 +56,12 @@ class RouteComponent extends Component{
                 {/* 고객관리 */}
                 <Route path = "/customer/withdrawal" Component={WithdrawalComponent}/>
                 <Route path = "/customer/info" Component={InfoComponent}/>
+                <Route path = "/customer/info/detail" Component={InfoDetailComponent}/>
+
                 {/* 고객센터 */}
                 <Route path = "/csCenter/notice" Component={NoticeComponent}/>
+                <Route path = "/csCenter/notice/add" Component={NoticeAddComponent}/>
+                <Route path = "/csCenter/notice/detail" Component={NoticeDetailCoponent}/>
                 <Route path = "/csCenter/chat" Component={ChatComponent}/>
             </Routes>
         )
