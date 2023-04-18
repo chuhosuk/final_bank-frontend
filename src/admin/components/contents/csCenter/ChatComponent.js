@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeadset} from "@fortawesome/free-solid-svg-icons";
 
+
 class ChatComponent extends Component{
     render(){
         return(

@@ -69,7 +69,7 @@ class LoanComponentAdd extends Component{
                  label="중도상환수수료율 :"
                  placeholder="Input your l_cxlRate"
                 /><br/>
-                <button color="light"><Link to="/product/loan">상품등록</Link></button>
+                <button color="light"><Link to="">상품등록</Link></button>
 
             </div>
                     

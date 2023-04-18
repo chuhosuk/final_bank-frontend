@@ -9,7 +9,7 @@ class WithdrawalComponent extends Component{
         return(
             <div>
                 <h1><FontAwesomeIcon icon={faUsers}/> 고객탈퇴요청목록</h1>
-                <Link to = "/customer/info/detail">이곳을 클릭하면 고객 상세페이지로 이동합니다.</Link>
+                <Link to  = "detail">이곳을 클릭하면 고객 상세페이지로 이동합니다.</Link>
                 <ul>
                     <li>1. 탈퇴 요청한 회원 목록 출력 </li>
                     <li>2. 회원 정보 클릭 시 고객 상세정보 페이지 확인 ( 계좌번호, 예치금 , 대출, 펀드 확인할 수 있도록)</li>

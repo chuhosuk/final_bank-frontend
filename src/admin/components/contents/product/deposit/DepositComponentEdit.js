@@ -57,7 +57,7 @@ class DepositComponentEdit extends Component{
              label="0.02% "
              placeholder="Input your d_cxlRate"
             /><br/>
-            <button color="light"><Link to="/product/deposit">수정완료</Link></button>
+            <button color="light"><Link to="">수정완료</Link></button>
 
         </div>      
         )

@@ -57,7 +57,7 @@ class SavingComponentEdit extends Component{
              label="0.02% "
              placeholder="Input your s_cxlRate"
             /><br/>
-            <button color="light"><Link to="/product/saving">수정완료</Link></button>
+            <button color="light"><Link to="">수정완료</Link></button>
 
         </div>      
         )

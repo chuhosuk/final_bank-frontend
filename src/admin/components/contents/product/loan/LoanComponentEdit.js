@@ -72,7 +72,7 @@ class LoanComponentEdit extends Component{
                 placeholder="Input your l_cxlRate"
             /><br/>
 
-            <button color="light"><Link to="/product/loan">수정완료</Link></button>
+            <button color="light"><Link to="">수정완료</Link></button>
 
         </div>      
         )

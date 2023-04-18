@@ -55,7 +55,7 @@ class SavingComponentAdd extends Component{
                  label="중도해지시금리 :"
                  placeholder="Input your s_cxlRate"
                 /><br/>
-                <button color="light"><Link to="/product/saving">상품등록</Link></button>
+                <button color="light"><Link to="">상품등록</Link></button>
 
             </div>
                     

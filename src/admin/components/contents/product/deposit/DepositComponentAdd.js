@@ -55,7 +55,7 @@ class DepositComponentAdd extends Component{
                  label="중도해지시금리 :"
                  placeholder="Input your d_cxlRate"
                 /><br/>
-                <button color="light"><Link to="/product/deposit">상품등록</Link></button>
+                <button color="light"><Link to="add">상품등록</Link></button>
 
             </div>
                     

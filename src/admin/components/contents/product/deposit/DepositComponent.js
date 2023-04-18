@@ -9,7 +9,7 @@ class DepositComponent extends Component{
             <>
                 <div>
                 <Typography variant='h4' align="center">예금상품</Typography>
-                <Button variant='contained' color='primary' align="center"><Link to="/product/deposit/add">상품등록</Link></Button>
+                <Button variant='contained' color='primary' align="center"><Link to="add">상품등록</Link></Button>
                 <Table>
                     <TableHead>
                         <TableRow>
@@ -25,7 +25,7 @@ class DepositComponent extends Component{
 
                     <TableBody>
                         <TableRow>
-                            <TableCell><Link to="/product/deposit/detail">든든예금</Link></TableCell>
+                            <TableCell><Link to="detail">든든예금</Link></TableCell>
                             <TableCell>1년만기</TableCell>
                             <TableCell>3.05%</TableCell>
                             <TableCell>든든한예금상품</TableCell>

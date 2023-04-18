@@ -1,7 +1,5 @@
 import React from "react";
-import {BrowserRouter, Route, Routes} from 'react-router-dom';
-// 메인
-import MainCarousels from "../MainCarousels";
+import {Route, Routes} from 'react-router-dom';
 // 조회
 import All from "../../contents/account/All";
 import Account from "../../contents/account/Account";

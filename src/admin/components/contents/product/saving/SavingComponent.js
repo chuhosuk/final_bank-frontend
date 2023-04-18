@@ -9,7 +9,7 @@ class SavingComponent extends Component{
             <>
                 <div>
                 <Typography variant='h4' align="center">적금상품</Typography>
-                <Button variant='contained' color='primary' align="center"><Link to="/product/saving/add">상품등록</Link></Button>
+                <Button variant='contained' color='primary' align="center"><Link to="add">상품등록</Link></Button>
                 <Table>
                     <TableHead>
                         <TableRow>
@@ -25,7 +25,7 @@ class SavingComponent extends Component{
 
                     <TableBody>
                         <TableRow>
-                            <TableCell><Link to="/product/saving/detail">든든한적금</Link></TableCell>
+                            <TableCell><Link to="detail">든든한적금</Link></TableCell>
                             <TableCell>1년만기</TableCell>
                             <TableCell>3.05%</TableCell>
                             <TableCell>든든한적금상품</TableCell>

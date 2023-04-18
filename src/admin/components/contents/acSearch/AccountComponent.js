@@ -25,7 +25,7 @@ class AccountComponent extends Component{
                     <tbody>
                         <tr>
                             <td>1</td>
-                            <td><Link to = "/acSearch/acAccount/">Mark</Link></td>
+                            <td>Mark</td>
                             <td>Otto</td>
                             <td>@mdo</td>
                         </tr>

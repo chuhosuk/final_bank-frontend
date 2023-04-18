@@ -9,7 +9,7 @@ class InfoComponent extends Component{
         return(
             <div>
                 <h1><FontAwesomeIcon icon={faUsers}/> 고객정보</h1>
-                <Link to = "/customer/info/detail">이곳을 클릭하면 고객 상세페이지로 이동합니다.</Link>
+                <Link to = "detail">이곳을 클릭하면 고객 상세페이지로 이동합니다.</Link>
                 <ul>
                     <li>1. 고객 전체 목록 출력</li>
                     <li>2. 고객 검색 조회 </li>

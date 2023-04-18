@@ -30,7 +30,7 @@ class SavingComponentDetail extends Component{
                         <TableCell>100,000</TableCell>
                         <TableCell>1,000,000</TableCell>
                         <TableCell>0.02%</TableCell>
-                        <TableCell><button color="light"><Link to="/product/saving/edit">상품수정</Link></button></TableCell>
+                        <TableCell><button color="light"><Link to="edit">상품수정</Link></button></TableCell>
                     </TableRow>
                 </TableBody>
             </Table>

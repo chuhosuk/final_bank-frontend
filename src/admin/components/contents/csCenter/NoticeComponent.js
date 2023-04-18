@@ -9,7 +9,9 @@ class NoticeComponent extends Component{
         return(
             <div>
                 <h1><FontAwesomeIcon icon={faHeadset}/> 공지사항 목록</h1>
-                <Link to = "/csCenter/notice/detail">이곳을 클릭하면 공지사항 상세페이지로 이동합니다.</Link>
+                <Link to = "detail">이곳을 클릭하면 공지사항 상세페이지로 이동합니다.</Link>
+                <br/>
+                <Link to = "add">이곳을 클릭하면 공지사항 등록페이지로 이동합니다.</Link>
                 <ul>
                     <li>1. 공지사항 목록 출력</li>
                     <li>2. 등록 버튼 틀릭시 등록 페이지 이동 </li>

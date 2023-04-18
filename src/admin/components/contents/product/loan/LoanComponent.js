@@ -8,7 +8,7 @@ class LoanComponent extends Component{
             <>
             <div>
             <Typography variant='h4' align="center">대출상품</Typography>
-            <Button variant='contained' color='primary' align="center"><Link to="/product/loan/add">상품등록</Link></Button>
+            <Button variant='contained' color='primary' align="center"><Link to="add">상품등록</Link></Button>
             <Table>
                 <TableHead>
                     <TableRow>
@@ -25,7 +25,7 @@ class LoanComponent extends Component{
 
                 <TableBody>
                     <TableRow>
-                        <TableCell><Link to="/product/loan/detail">꿀꿀대출</Link></TableCell>
+                        <TableCell><Link to="detail">꿀꿀대출</Link></TableCell>
                         <TableCell>#돼지은행대표상품</TableCell>
                         <TableCell>조건없음</TableCell>
                         <TableCell>5년</TableCell>
