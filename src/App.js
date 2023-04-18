@@ -9,12 +9,12 @@ function App() {
       <BrowserRouter>
         
         <Routes>
-          <Route path="/admin" Component={LayoutA} />
-          <Route path="/customer" Component={LayoutC} />
-          
+          <Route path="/admin/*" Component={LayoutA} />
+          <Route path="/customer/*" Component={LayoutC} />
         </Routes>
-          <Link to ="/admin">관리자</Link>
-          <Link to ="/customer">고객</Link>
+        
+          <Link to ="/admin/*">관리자</Link>
+          <Link to ="/customer/*">고객</Link>
       </BrowserRouter>
     </div>
   );

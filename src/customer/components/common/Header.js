@@ -6,6 +6,7 @@ import '../../resources/vendor/bootstrap/css/bootstrap.min.css';
 import '../../resources/vendor/bootstrap-icons/bootstrap-icons.css'
 import '../../resources/vendor/glightbox/css/glightbox.min.css'
 import '../../resources/vendor/swiper/swiper-bundle.min.css'
+import { Link } from 'react-router-dom';
 
 // npm i bootstrap@5.2.3
 // npm install @mui/material @emotion/react @emotion/stylednpm install react-bootstrap bootstrap
@@ -50,7 +51,7 @@ function Header () {
                             </li>
                             <li className="dropdown"><a href="#!"><span>상품</span> <i className="bi bi-chevron-down"></i></a>
                                 <ul>
-                                    <li><a href="/pdDeposit">예금</a></li>
+                                    <li><Link to ="/pdDeposit">예금</Link></li>
                                     <li><a href="/pdSaving">적금</a></li>
                                     <li><a href="/pdAccount">입출금</a></li>
                                     <li><a href="/pdLoan">대출</a></li>

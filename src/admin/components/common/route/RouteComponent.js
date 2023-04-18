@@ -24,14 +24,14 @@ import SavingComponentEdit from "../../contents/product/saving/SavingComponentEd
 import SavingComponentAdd from "../../contents/product/saving/SavingComponetAdd";
 import NoticeAddComponent from "../../contents/csCenter/NoticeAddComponent";
 import NoticeDetailCoponent from "../../contents/csCenter/NoticeDetailComponent";
+import Layout from "../Layout";
 
 
 class RouteComponent extends Component{
     render(){
         return(
-            <Routes>
+            <Routes path = "/admin/*" Component={Layout}>
                 {/* contents경로에서 컴포넌트 만들면 import 해서 추가하기 */}
-                <Route path = "/admin" Component={MainComponents}/>
 s                {/* 상품관리 */}
                 <Route path = "/product/loan" Component={LoanComponent} />
                 <Route path = "/product/loan/add" Component={LoanComponentAdd}/>
