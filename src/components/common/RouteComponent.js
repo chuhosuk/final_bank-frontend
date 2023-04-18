@@ -1,9 +1,8 @@
 import { Component } from "react";
 import {BrowserRouter,Link,Route, Routes,Outlet} from 'react-router-dom';
 import MainComponents from "../contents/MainComponents";
-import LoanComponent from "../contents/product/LoanComponent";
-import SavingComponent from "../contents/product/SavingComponent";
-import DepositComponent from "../contents/product/DepositComponent";
+import SavingComponent from "../contents/product/saving/SavingComponent";
+import DepositComponent from "../contents/product/deposit/DepositComponent";
 import AccountComponent from "../contents/acSearch/AccountComponent";
 import DormantComponent from "../contents/acSearch/DormantComponent";
 import AcDepositComponent from "../contents/acSearch/AcDepositComponent";
@@ -11,7 +10,16 @@ import InfoComponent from "../contents/customer/InfoComponent";
 import WithdrawalComponent from "../contents/customer/WithdrawalComponent";
 import ChatComponent from "../contents/csCenter/ChatComponent";
 import NoticeComponent from "../contents/csCenter/NoticeComponent";
-
+import DepositComponentAdd from "../contents/product/deposit/DepositComponentAdd";
+import DepositComponentDetail from "../contents/product/deposit/DepositComponentDetail";
+import DepositComponentEdit from "../contents/product/deposit/DepositComponentEdit";
+import LoanComponentAdd from "../contents/product/loan/LoanComponentAdd";
+import LoanComponentDetail from "../contents/product/loan/LoanComponentDetail";
+import LoanComponentEdit from "../contents/product/loan/LoanComponentEdit";
+import LoanComponent from "../contents/product/loan/LoanComponent";
+import SavingComponentDetail from "../contents/product/saving/SavingComponentDetail";
+import SavingComponentEdit from "../contents/product/saving/SavingComponentEdit";
+import SavingComponentAdd from "../contents/product/saving/SavingComponetAdd";
 
 
 class RouteComponent extends Component{
@@ -22,19 +30,21 @@ class RouteComponent extends Component{
                 <Route path = "/" exact = {true} Component={MainComponents}/>
                 <Route path = "/admin" exact = {true} Component={SavingComponent}/>
                 {/* 상품관리 */}
-                <Route path = "/product/loan" Component={LoanComponent}>
-                    <Route path =":add" Component={'상품등록'}/>
-                    <Route path =":list" Component={'상품리스트'}/>
-                    <Route path =":apply" Component={'대출신청조회'}/>
-                </Route>   
-                <Route path = "/product/deposit" Component={DepositComponent}>
-                    <Route path =":add" Component={'상품등록'}/>        
-                    <Route path =":list" Component={'상품리스트'}/>
-                </Route>
-                <Route path = "/product/saving" Component={SavingComponent}>
-                    <Route path =":add" Component={'상품등록'}/>
-                    <Route path =":list" Component={'상품리스트'}/>
-                </Route>
+                <Route path = "/product/loan" Component={LoanComponent} />
+                <Route path = "/product/loan/add" Component={LoanComponentAdd}/>
+                <Route path = "/product/loan/detail" Component={LoanComponentDetail}/>
+                <Route path = "/product/loan/edit" Component={LoanComponentEdit}/>           
+                
+                <Route path = "/product/deposit" Component={DepositComponent} />
+                <Route path = "/product/deposit/add" Component={DepositComponentAdd}/>
+                <Route path = "/product/deposit/detail" Component={DepositComponentDetail}/>
+                <Route path = "/product/deposit/edit" Component={DepositComponentEdit}/>           
+                   
+                <Route path = "/product/saving" Component={SavingComponent} />
+                <Route path = "/product/saving/add" Component={SavingComponentAdd}/>
+                <Route path = "/product/saving/detail" Component={SavingComponentDetail}/>
+                <Route path = "/product/saving/edit" Component={SavingComponentEdit}/>      
+             
                 {/* 조회관리 */}
                 <Route path = "/acSearch/acAccount" Component={AccountComponent}/>
                 <Route path = "/acSearch/acDeposit" Component={AcDepositComponent}/>
@@ -49,4 +59,5 @@ class RouteComponent extends Component{
         )
     }
 }
+
 export default RouteComponent;
