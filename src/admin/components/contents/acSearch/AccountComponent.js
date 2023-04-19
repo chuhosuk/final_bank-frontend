@@ -47,6 +47,7 @@ class AccountComponent extends Component{
                         </tr>
                     </tbody>
                 </Table>
+                SELECT * FROM account_tbl ORDER BY newDate DESC;
             </div>                
         )
     }

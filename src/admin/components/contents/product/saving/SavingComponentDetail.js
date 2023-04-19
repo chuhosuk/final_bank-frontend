@@ -34,6 +34,7 @@ class SavingComponentDetail extends Component{
                     </TableRow>
                 </TableBody>
             </Table>
+            SELECT * FROM savings_product where s_pdName = ''; 
             </div>
             </>            
         )

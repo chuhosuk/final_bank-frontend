@@ -46,6 +46,10 @@ class InfoComponent extends Component{
                         </tr>
                     </tbody>
                 </Table>
+                SELECT id,name,email,address,hp,birthday,grade,regDate <br/>
+                FROM customer<br/>
+                ORDER BY regDate DESC; <br/>
+
             </div>            
         )
     }

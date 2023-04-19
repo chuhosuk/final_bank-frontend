@@ -83,7 +83,7 @@ class DepositComponent extends Component{
                         </TableRow>
                     </TableBody>
                 </Table>    
-             
+                SELECT * FROM  deposit_product;
                 </div>
             </>            
         )

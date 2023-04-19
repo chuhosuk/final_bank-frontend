@@ -36,6 +36,7 @@ class LoanComponentDetail extends Component{
                     </TableRow>
                 </TableBody>
             </Table>
+            SELECT * FROM loan_product WHERE l_pdName='';
             </div>
             </>            
         )

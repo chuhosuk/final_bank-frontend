@@ -37,7 +37,7 @@ class SavingComponent extends Component{
 
                     
                 </Table>    
-             
+                SELECT * FROM savings_product;
                 </div>
             </>            
         )

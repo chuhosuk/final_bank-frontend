@@ -34,6 +34,7 @@ class DepositComponentDetail extends Component{
                     </TableRow>
                 </TableBody>
             </Table>
+            SELECT * FROM  deposit_product WHERE d_pdName='';
             </div>
             </>            
         )

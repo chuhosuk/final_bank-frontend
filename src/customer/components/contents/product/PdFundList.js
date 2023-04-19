@@ -6,6 +6,8 @@ function PdFundList () {
     return (
         <div className="container">
              <img src={pd_fundList} alt="" />
+             SELECT * FROM F_DETAIL_TBL;
+
         </div>
     )
 }

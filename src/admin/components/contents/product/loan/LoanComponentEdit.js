@@ -7,7 +7,7 @@ class LoanComponentEdit extends Component{
     render(){
         return(
             <div align="center" >
-            <Typography variant='h4' align="center" style={style}>예금상품수정</Typography>
+            <Typography variant='h4' align="center" style={style}>대출상품수정</Typography>
             <TextField 
                 required
                 id="standard-required"
@@ -73,7 +73,7 @@ class LoanComponentEdit extends Component{
             /><br/>
 
             <button color="light"><Link to="">수정완료</Link></button>
-
+            SELECT * FROM loan_product WHERE l_pdName='';
         </div>      
         )
     }

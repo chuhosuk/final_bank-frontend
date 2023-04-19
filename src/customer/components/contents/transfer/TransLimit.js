@@ -7,6 +7,7 @@ function TransLimit () {
         <div className="contianer">
             <img src={translimit} alt=""/>
             <br/>
+            SELECT trsfLimit FROM account_tbl WHERE id='hong1234'; -- 이체 한도 조회
             <br/>
             <br/>
         </div>

@@ -5,7 +5,8 @@ import pd_fudHaving from  '../../../../customer/resources/img/pdloan.png';
 function PdLoan () {
     return (
         <div className="container">
-             <img src={pd_fudHaving} alt="" />
+             <img src={pd_fudHaving} alt="" /><br />
+             SELECT * FROM loan_product;
              <br />
              <br />
              <br />

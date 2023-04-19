@@ -63,7 +63,7 @@ class LoanComponent extends Component{
                 </TableBody>
                 
             </Table>    
-         
+            SELECT * FROM loan_product;<br/>
             </div>
         </>            
         )

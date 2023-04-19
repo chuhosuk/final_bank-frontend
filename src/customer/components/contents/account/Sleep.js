@@ -7,6 +7,10 @@ function Sleep () {
         <div>
              <img src={ac_sleep} alt="" />
              <br/>
+             SELECT * <br/>
+                FROM account_tbl<br/>
+                WHERE acState IN ('휴면');<br/>
+
              <br/>
              <br/>
         </div>

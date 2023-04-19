@@ -7,6 +7,11 @@ function Saving () {
         <div>
             <img src={ac_saving} alt="" />
             <br/>
+            SELECT *  <br/>
+            FROM s_account_tbl s, ACCOUNT_TBL a  <br/>
+            WHERE s.ACNUMBER = a.ACNUMBER  <br/>
+            AND id='hong1234'; <br/>
+
             <br/>
             <br/>
         </div>

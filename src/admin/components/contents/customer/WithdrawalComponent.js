@@ -44,6 +44,10 @@ class WithdrawalComponent extends Component{
                         </tr>
                     </tbody>
                 </Table>
+                SELECT id,name,email,address,hp,birthday,grade,regDate,cus_state<br/>
+                FROM customer<br/>
+                 WHERE cus_state = '탈퇴요청';
+
             </div>            
         )
     }

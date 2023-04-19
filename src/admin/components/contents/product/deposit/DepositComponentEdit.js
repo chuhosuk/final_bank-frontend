@@ -58,7 +58,7 @@ class DepositComponentEdit extends Component{
              placeholder="Input your d_cxlRate"
             /><br/>
             <button color="light"><Link to="">수정완료</Link></button>
-
+            SELECT * FROM  deposit_product WHERE d_pdName='';
         </div>      
         )
     }

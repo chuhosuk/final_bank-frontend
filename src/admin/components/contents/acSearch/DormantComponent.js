@@ -41,6 +41,10 @@ class DormantComponent extends Component{
                         </tr>
                     </tbody>
                 </Table>
+                SELECT * <br/>
+                FROM account_tbl<br/>
+                WHERE acState IN ('휴면');<br/>
+
             </div>            
         )
     }

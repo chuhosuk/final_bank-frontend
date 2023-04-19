@@ -7,6 +7,9 @@ function TransDeposit () {
         <div className="container">
             <img src={transDeposit} alt="face" />
             <br />
+            SELECT * <br />
+          FROM transfer_tbl<br />
+         WHERE t_num = 1; --이체 결과 조회 1건
             <br />
             <br />
         </div>

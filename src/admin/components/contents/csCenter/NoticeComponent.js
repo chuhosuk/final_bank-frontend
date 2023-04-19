@@ -47,6 +47,7 @@ class NoticeComponent extends Component{
                         </tr>
                     </tbody>
                 </Table>
+                SELECT * FROM notice_tbl; --공지사항 리스트 전체
             </div>            
         )
     }

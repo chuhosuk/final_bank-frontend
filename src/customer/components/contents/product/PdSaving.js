@@ -7,6 +7,7 @@ function PdSaving () {
     return (
        <div className="container">
             <img src={saving} alt="" />
+            SELECT * FROM  savings_product; 
        </div>
     )
 }

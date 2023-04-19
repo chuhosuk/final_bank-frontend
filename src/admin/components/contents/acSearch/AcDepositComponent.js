@@ -40,6 +40,7 @@ class AcDepositComponent extends Component{
                         </tr>
                     </tbody>
                 </Table>
+                SELECT * FROM transfer_tbl ORDER BY t_num DESC;
             </div>            
         )
     }

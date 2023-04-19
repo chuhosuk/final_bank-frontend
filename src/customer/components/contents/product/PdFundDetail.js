@@ -6,6 +6,14 @@ function PdFundDetail () {
     return (
         <div className="container">
              <img src={pd_fundDetail} alt="" />
+             SELECT   * <br/>
+                FROM  F_DETAIL_TBL fdt ,<br/>
+                    F_ACCOUNT_TBL fat,<br/>
+                    CUSTOMER c<br/> 
+                WHERE    fdt.F_NUM = fat.F_NUM <br/>
+                AND     c.ID  = fat.ID<br/>
+                AND     c.ID = ?<br/>
+                AND    fdt.F_NUM = ?<br/>
         </div>
     )
 }
