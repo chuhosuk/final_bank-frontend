@@ -1,12 +1,11 @@
 // 대출심사조회
 import React from "react";
+import loanaccount from '../../../../customer/resources/img/loanaccount.png';
 
 function LoanState () {
     return (
-        <div>
-            <br/><br/><br/>
-            <h4>대출심사조회</h4>
-            <br/><br/><br/>
+        <div className="container">
+             <img src={loanaccount} alt="face"/>
         </div>
     )
 }

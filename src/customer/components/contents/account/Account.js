@@ -1,12 +1,11 @@
 // 입출금 통장조회
 import React from "react";
+import deposit from '../../../../customer/resources/img/deposit.png';
 
 function Account () {
     return (
-        <div>
-            <br/><br/><br/>
-            <h4>입출금조회</h4>
-            <br/><br/><br/>           
+        <div className="container">
+            <img src={deposit} alt = "face"/>         
         </div>
     )
 }

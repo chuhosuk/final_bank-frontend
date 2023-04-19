@@ -1,12 +1,13 @@
 // 전체조회
 import React from "react";
+import deposit from '../../../../customer/resources/img/deposit.png';
 
 function All () {
     return (
         <div>
-            <br/><br/><br/>
-            <h4>전체조회</h4>
-            <br/><br/><br/>
+            <div className="container">
+                <img src={deposit} alt = "face"/>         
+            </div>
         </div>
     )
 }

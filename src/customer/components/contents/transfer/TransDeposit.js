@@ -1,12 +1,14 @@
 // 계좌이체
 import React from "react";
+import transDeposit from '../../../../customer/resources/img/transDeposit.png';
 
 function TransDeposit () {
     return (
-        <div>
-            <br/><br/><br/>
-            <h4>계좌이체</h4>
-            <br/><br/><br/>
+        <div className="container">
+            <img src={transDeposit} alt="face" />
+            <br />
+            <br />
+            <br />
         </div>
     )
 }

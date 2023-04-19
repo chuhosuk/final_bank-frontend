@@ -1,12 +1,14 @@
 // 자동이체 조회
 import React from "react";
+import autoTrans from '../../../../customer/resources/img/2-3.png';
 
 function AutoTrans () {
     return (
-        <div>
-            <br/><br/><br/>
-            <h4>자동이체조회</h4>
-            <br/><br/><br/>
+        <div className="container">
+            <img src={autoTrans} alt="" />
+            <br />
+            <br />
+            <br />
         </div>
     )
 }

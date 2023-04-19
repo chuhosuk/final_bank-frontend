@@ -1,12 +1,11 @@
 // 내정보
 import React from "react";
 
+
 function Mypage () {
     return (
-        <div>
-            <br/><br/><br/>
-            <h4>펀드 계좌개설</h4>
-            <br/><br/><br/>
+        <div className="container">
+           <h3>회원정보 수정 및 탈퇴</h3>
         </div>
     )
 }

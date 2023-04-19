@@ -1,12 +1,14 @@
 // 대출 상품
 import React from "react";
+import pd_fudHaving from  '../../../../customer/resources/img/pdloan.png';
 
 function PdLoan () {
     return (
-        <div>
-            <br/><br/><br/>
-            <h4>대출 상품</h4>
-            <br/><br/><br/>
+        <div className="container">
+             <img src={pd_fudHaving} alt="" />
+             <br />
+             <br />
+             <br />
         </div>
     )
 }

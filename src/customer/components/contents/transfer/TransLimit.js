@@ -1,12 +1,14 @@
 // 이체한도 조회
 import React from "react";
+import translimit from '../../../../customer/resources/img/2-4.png';
 
 function TransLimit () {
     return (
-        <div>
-            <br/><br/><br/>
-            <h4>이체한도조회</h4>
-            <br/><br/><br/>
+        <div className="contianer">
+            <img src={translimit} alt=""/>
+            <br/>
+            <br/>
+            <br/>
         </div>
     )
 }

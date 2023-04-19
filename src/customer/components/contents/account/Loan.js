@@ -1,12 +1,14 @@
 // 대출계좌조회
 import React from "react";
+import loanaccount from '../../../../customer/resources/img/loanaccount.png';
 
 function Loan () {
     return (
         <div>
-            <br/><br/><br/>
-            <h4>대출계좌조회</h4>
-            <br/><br/><br/>
+            <img src={loanaccount} alt="face"/>
+            <br/>
+            <br/>
+            <br/>
         </div>
     )
 }

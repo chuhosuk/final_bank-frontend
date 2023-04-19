@@ -1,12 +1,14 @@
 // 공지사항
 import React from "react";
+import faq from '../../../../customer/resources/img/faq.png';
 
 function CsBoard () {
     return (
-        <div>
-            <br/><br/><br/>
-            <h4>공지사항</h4>
-            <br/><br/><br/>
+        <div className="container">
+            <img src={faq} alt="face" />
+            <br/>
+            <br/>
+            <br/>
         </div>
     )
 }

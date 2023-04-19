@@ -1,13 +1,13 @@
 // 적금 상품
 import React from "react";
+import saving from '../../../../customer/resources/img/3-2.png';
+
 
 function PdSaving () {
     return (
-        <div>
-            <br/><br/><br/>
-            <h4>적금 상품</h4>
-            <br/><br/><br/>
-        </div>
+       <div className="container">
+            <img src={saving} alt="" />
+       </div>
     )
 }
 export default PdSaving;

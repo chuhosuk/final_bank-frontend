@@ -1,12 +1,11 @@
 // 예금 상품
 import React from "react";
+import pd_deposit from '../../../../customer/resources/img/3-1.png';
 
 function PdDeposit () {
     return (
-        <div>
-            <br/><br/><br/>
-            <h4>예금 상품</h4>
-            <br/><br/><br/>
+        <div className="container">
+             <img src={pd_deposit} alt="" />
         </div>
     )
 }

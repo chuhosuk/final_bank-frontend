@@ -1,12 +1,11 @@
 // 예금조회
 import React from "react";
+import deposit from '../../../../customer/resources/img/deposit.png';
 
 function Deposit () {
     return (
         <div>
-            <br/><br/><br/>
-            <h4>예금조회</h4>
-            <br/><br/><br/>
+            <img src={deposit} alt = "face"/>  
         </div>
     )
 }

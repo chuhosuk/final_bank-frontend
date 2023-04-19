@@ -1,12 +1,11 @@
 // 자산관리
 import React from "react";
+import my_money from '../../../../customer/resources/img/money.png';
 
 function Money () {
     return (
-        <div>
-            <br/><br/><br/>
-            <h4>자산관리</h4>
-            <br/><br/><br/>
+        <div className="container">
+            <img src={my_money} alt="" />
         </div>
     )
 }

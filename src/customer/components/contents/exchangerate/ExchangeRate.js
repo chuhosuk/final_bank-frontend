@@ -1,12 +1,14 @@
 // 환율
 import React from "react";
+import ex_rate from '../../../../customer/resources/img/4-1.png';
 
 function ExchangeRate () {
     return (
-        <div>
-            <br/><br/><br/>
-            <h4>환율</h4>
-            <br/><br/><br/>
+        <div className="container">
+            <img src={ex_rate} alt="" />
+            <br/>
+            <br/>
+            <br/>
         </div>
     )
 }

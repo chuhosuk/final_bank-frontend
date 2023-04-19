@@ -1,12 +1,14 @@
 // 자동이체등록
 import React from "react";
+import addTrans from '../../../../customer/resources/img/2-2.png';
+
 
 function AddAutoTrans () {
     return (
-        <div>
-            <br/><br/><br/>
-            <h4>자동이체등록</h4>
-            <br/><br/><br/>
+        <div className="container">
+            <img src={addTrans} alt="face" />
+            <br/>
+            <br/>
         </div>
     )
 }

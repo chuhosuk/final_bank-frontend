@@ -1,5 +1,5 @@
 import React from "react";
-import {Route, Routes} from 'react-router-dom';
+import {Route, Routes} from 'react-router-dom'; // BrowserRouter
 // 조회
 import All from "../../contents/account/All";
 import Account from "../../contents/account/Account";
@@ -37,41 +37,41 @@ const AppRouter = () => {
     return(
         <Routes  path="/customer/*" Component={Layout} >
             {/* 조회 */}
-            <Route path="/all" Component={All} />
-            <Route path="/account" Component={Account} />
-            <Route path="/deposit" Component={Deposit} />
-            <Route path="/saving" Component={Saving} />
-            <Route path="/loan_state" Component={LoanState} />
-            <Route path="/loan" Component={Loan} />
-            <Route path="/sleep" Component={Sleep} />
+            <Route path="/account/all" Component={All} />
+            <Route path="/account/account" Component={Account} />
+            <Route path="/account/deposit" Component={Deposit} />
+            <Route path="/account/saving" Component={Saving} />
+            <Route path="/account/loan_state" Component={LoanState} />
+            <Route path="/account/loan" Component={Loan} />
+            <Route path="/account/sleep" Component={Sleep} />
 
             {/* 이체 */}
-            <Route path="/trans_deposit" Component={TransDeposit} />
-            <Route path="/add_auto_trans" Component={AddAutoTrans} />
-            <Route path="/auto_trans" Component={AutoTrans} />
-            <Route path="/trans_limit" Component={TransLimit} />
+            <Route path="/transfer/trans_deposit" Component={TransDeposit} />
+            <Route path="/transfer/add_auto_trans" Component={AddAutoTrans} />
+            <Route path="/transfer/auto_trans" Component={AutoTrans} />
+            <Route path="/transfer/trans_limit" Component={TransLimit} />
 
             {/* 상품 */}
-            <Route path="/pdDeposit" Component={PdDeposit} />
-            <Route path="/pdSaving" Component={PdSaving} />
-            <Route path="/pdAccount" Component={PdAccount} />
-            <Route path="/pdLoan" Component={PdLoan} />
-            <Route path="/open_fund" Component={OpenFund} />
-            <Route path="/pdfundList" Component={PdFundList} />
-            <Route path="/pdfundHaving" Component={PdFundHaving} />
-            <Route path="/pdfundDetail" Component={PdFundDetail} />
+            <Route path="/product/pdDeposit" Component={PdDeposit} />
+            <Route path="/product/pdSaving" Component={PdSaving} />
+            <Route path="/product/pdAccount" Component={PdAccount} />
+            <Route path="/product/pdLoan" Component={PdLoan} />
+            <Route path="/product/open_fund" Component={OpenFund} />
+            <Route path="/product/pdfundList" Component={PdFundList} />
+            <Route path="/product/pdfundHaving" Component={PdFundHaving} />
+            <Route path="/product/pdfundDetail" Component={PdFundDetail} />
 
             {/* 환율 */}
-            <Route path="/exchange" Component={ExchangeRate} />
-            <Route path="/exchange_cal" Component={ExchangeRateCal} />
+            <Route path="/exchangerate/exchange" Component={ExchangeRate} />
+            <Route path="/exchangerate/exchange_cal" Component={ExchangeRateCal} />
 
             {/* 고객센터 */}
-            <Route path="/cs_board" Component={CsBoard} />
-            <Route path="/chatting" Component={Chatting} />
+            <Route path="/cscenter/cs_board" Component={CsBoard} />
+            <Route path="/cscenter/chatting" Component={Chatting} />
 
             {/* 마이페이지 */}
-            <Route path="/mypage" Component={Mypage} />
-            <Route path="/money" Component={Money} />
+            <Route path="/mypage/mypage" Component={Mypage} />
+            <Route path="/mypage/money" Component={Money} />
         </Routes>
     )
 }
