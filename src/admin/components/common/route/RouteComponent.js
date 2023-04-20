@@ -21,7 +21,7 @@ import LoanComponentEdit from "../../contents/product/loan/LoanComponentEdit";
 import LoanComponent from "../../contents/product/loan/LoanComponent";
 import SavingComponentDetail from "../../contents/product/saving/SavingComponentDetail";
 import SavingComponentEdit from "../../contents/product/saving/SavingComponentEdit";
-import SavingComponentAdd from "../../contents/product/saving/SavingComponetAdd";
+import SavingComponentAdd from "../../contents/product/saving/SavingComponentAdd";
 import NoticeAddComponent from "../../contents/csCenter/NoticeAddComponent";
 import NoticeDetailCoponent from "../../contents/csCenter/NoticeDetailComponent";
 import Layout from "../Layout";
