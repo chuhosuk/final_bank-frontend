@@ -1,0 +1,175 @@
+.center_product_area {
+    display: flex;
+    background: #E9EFE4;
+    background-size: cover;
+    width: 100%;
+    height: 150px; 
+}
+
+.center_middle_inner {
+    margin: auto;
+    display: flex;
+}
+
+.board {
+    border-radius: 17px;
+    border: 1px solid rgba(231, 229, 229, 0.902);
+    left: 0;
+}
+/*
+<div class="sub_cont_wrap">
+<div class="main_notice_wrap mybank">
+    <div>
+        <h3 class="black">공지사항</h3>
+        <ul id="noticeListUI">
+                <li>
+                    <span> 2023.04.13 </span>
+                    <p><a href="#" class="noticeDet" data-info="2122" >조합 사칭 분담금 선납 이체 보이스피싱 주의 안내</a></p>
+                </li>
+                <li>
+                    <span>2023.02.27</span>
+                    <p><a href="#" class="noticeDet" data-info="2072" >인터넷뱅킹 메뉴 조정 안내</a></p>
+                </li>
+                <li>
+                    <span>2023.02.01</span>
+                    <p><a href="#" class="noticeDet" data-info="2055" >당행 사칭 피싱 문자 주의 안내</a></p>
+                </li>
+                <li>
+                    <span> 2023.04.20</span>
+                    <p><a href="#" class="noticeDet" data-info="2129" >시스템 점검 안내 (비엔피파리바은행/IBK 투자증권)</a></p>
+                </li>
+        </ul>
+        <a href="#" class="user_more" id="notice_more">더보기</a>
+    </div>
+
+    <div>
+        <h3 class="blue">혜택존</h3>
+        <ul id="eventListUI">
+                <li>
+                    <span>2023.04.01~2023.04.30</span>
+                    <p><a href="#" class="eventDet" data-info="942" data-info-cmpgid="">Kbank 6주년 1만개의 선물이 쏟아집니다</a></p>
+                </li>
+                <li>
+                    <span>2023.03.29~2023.04.30</span>
+                    <p><a href="#" class="eventDet" data-info="932" data-info-cmpgid="">케이뱅크가 이사비 100만원을 드려요</a></p>
+                </li>
+                <li>
+                    <span>2023.03.27~2023.05.31</span>
+                    <p><a href="#" class="eventDet" data-info="926" data-info-cmpgid="">지금 바로 전국 세븐일레븐 습격! 하나만 사도, 두 개 사도 50% 할인</a></p>
+                </li>
+                <li>
+                    <span>2023.04.01~2023.12.31</span>
+                    <p><a href="#" class="eventDet" data-info="965" data-info-cmpgid="">make money workbook 04 해외여행을 준비하는 이들을 위한 안내서</a></p>
+                </li>
+        </ul>
+        <a href="#" class="user_more" id="event_more">더보기</a>
+    </div>
+
+    <div>
+        <h3 class="black">상품 공시실</h3>
+        <ul id="productListUI">
+                <li>
+                    <span>2022.12.28
+                    </span>
+                    <p>
+                        <a href="#" class="gongsiDet" data-info-biz="01" data-info-no="2016">
+                            [예금] 핫딜적금 x 우리카드
+                        </a>
+                    </p>
+                </li>
+                <li>
+                    <span>2022.11.11
+                    </span>
+                    <p>
+                        <a href="#" class="gongsiDet" data-info-biz="02" data-info-no="1966">
+                            [대출] 스마트론 신용대출
+                        </a>
+                    </p>
+                </li>
+                <li>
+                    <span>2022.03.07
+                    </span>
+                    <p>
+                        <a href="#" class="gongsiDet" data-info-biz="03" data-info-no="1751">
+                            [카드] 케이뱅크 X 해피포인트 체크카드
+                        </a>
+                    </p>
+                </li>
+                <li>
+                    <span>2021.07.07
+                    </span>
+                    <p>
+                        <a href="#" class="gongsiDet" data-info-biz="01" data-info-no="1577">
+                            [예금] 핫딜예금 x KB손해보험
+                        </a>
+                    </p>
+                </li>
+                
+            
+        </ul>
+        <a href="#" class="user_more" id="gongsi_more">더보기</a>
+    </div>
+</div>
+<div class="main_banner_wrap">
+    <ul>
+        
+    </ul>
+</div>
+<!-- sub_mybank -->
+
+</div>
+
+</div><!-- //content -->
+
+<div>
+<Typography style={{fontSize: '9', fontWeight: 'bold'}}>예금</Typography>
+<TableContainer>
+    <Table  aria-label="csBoard">
+        <TableHead>
+            <TableRow>
+                <TableCell align="center">No</TableCell>
+                <TableCell align="center">Title</TableCell>
+                <TableCell align="center">Date</TableCell>
+            </TableRow>
+        </TableHead>
+        <TableBody>
+            <TableRow>
+                <TableCell align="center">1</TableCell>
+                <TableCell align="center" >임시제목</TableCell>
+                <TableCell align="center">2023.04.21</TableCell>
+            </TableRow>
+        </TableBody>
+    </Table>
+</TableContainer>
+</div>
+<br/><br/>
+<div>
+<Typography style={{fontSize: '9', fontWeight: 'bold'}}>적금</Typography>
+<TableContainer>
+    <Table   aria-label="csBoard">
+        <TableHead>
+            <TableRow>
+                <TableCell align="center">No</TableCell>
+                <TableCell align="center">Title</TableCell>
+                <TableCell align="center">Date</TableCell>
+            </TableRow>
+        </TableHead>
+        <TableBody>
+            <TableRow>
+                <TableCell align="center">1</TableCell>
+                <TableCell align="center" >임시제목</TableCell>
+                <TableCell align="center">2023.04.21</TableCell>
+            </TableRow>
+        </TableBody>
+    </Table>
+</TableContainer>
+</div>
+
+<div>
+<div>
+<List>
+
+</List>
+
+</div>
+*/
