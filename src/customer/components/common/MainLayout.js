@@ -1,14 +1,16 @@
-//import MainBtn from "./MainBtn"; <MainBtn />
-import MainBoard from "./MainBoard";
+
 import MainCarousels from "./MainCarousels";   
-// import MainLink from "./MainLink"; <MainLink />
+
+// Main  예/적금, 대출, 공지사항 미니 게시판(List)
+// import MainBoard from "./MainBoard";
+// <MainBoard />
 
 function MainLayout() {
     return (
         <div>
            <MainCarousels/>    
             <br/> <br/>
-            <MainBoard />
+            
             <br/> <br/>
         </div>
     )

@@ -32,6 +32,10 @@ import Chatting from "../../contents/cscenter/Chatting";
 import Mypage from "../../contents/mypage/Mypage";
 import Money from "../../contents/mypage/Money";
 import Layout from "../Layout";
+// 로그인
+import Login from "../../common/login/Login";
+// 회원가입
+import Join from "../../common/join/Join";
 
 const AppRouter = () => {
     return(
@@ -72,6 +76,11 @@ const AppRouter = () => {
             {/* 마이페이지 */}
             <Route path="/mypage/mypage" Component={Mypage} />
             <Route path="/mypage/money" Component={Money} />
+
+            {/* 로그인 / 회원가입 */}
+            <Route path="/login/login" Component={Login} />
+            <Route path="/join/join" Component={Join} />
+
         </Routes>
     )
 }

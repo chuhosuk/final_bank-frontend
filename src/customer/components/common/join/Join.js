@@ -11,7 +11,7 @@ function join(){
             <Form>
             <br/><br/>
                 <Typography variant="h2" textAlign="center" color="green">회원가입</Typography><br/><br/>
-                <Form.Group as={Row} className="mb-3" controlId="formGroupEmail">
+                <Form.Group as={Row} className="mb-3" controlId="formGroupId">
                     <Form.Label column sm={2}>아이디</Form.Label>
                     <Col sm={8}><Form.Control type="text" placeholder="소문자, 숫자 조합 8자 이상 15자 이하" /></Col>
                     <Col sm={2}><Button variant="success">중복확인</Button></Col>
@@ -22,12 +22,12 @@ function join(){
                     <Col sm={10}><Form.Control type="password" placeholder="소문자, 숫자 조합 12자 이상 20자 이하" /></Col>
                 </Form.Group>
                 <br/>
-                <Form.Group as={Row} className="mb-3" controlId="formGroupPassword">
+                <Form.Group as={Row} className="mb-3" controlId="formGroupRePassword">
                     <Form.Label column sm={2}>비밀번호 확인</Form.Label>
                     <Col sm={10}><Form.Control type="password" placeholder="소문자, 숫자 조합 12자 이상 20자 이하" /></Col>
                 </Form.Group>
                 <br/>
-                <Form.Group as={Row} className="mb-3" controlId="formGroupPassword">
+                <Form.Group as={Row} className="mb-3" controlId="formGroupName">
                     <Form.Label column sm={2}>이름</Form.Label>
                     <Col sm={10}><Form.Control type="text" placeholder="이름을 입력하세요" /></Col>
                 </Form.Group>
@@ -47,7 +47,7 @@ function join(){
                     </Form.Select></Col>
                 </Form.Group>
                 <br/>
-                <Form.Group as={Row} className="mb-3" controlId="formGroupEmail">
+                <Form.Group as={Row} className="mb-3" controlId="formGroupAddress">
                     <Form.Label column sm={2}>주소</Form.Label>
                     <Col sm={6}><Form.Control type="text" placeholder="우편번호" /></Col>
                     <Col sm={4}><Button variant="success">우편번호찾기</Button></Col>
@@ -59,12 +59,12 @@ function join(){
                     <Col sm={10}><Form.Control type="text" placeholder="상세주소" /></Col>
                 </Form.Group>
                 <br/>
-                <Form.Group as={Row} className="mb-3" controlId="formGroupEmail">
+                <Form.Group as={Row} className="mb-3" controlId="formGroupPhone">
                     <Form.Label column sm={2}>핸드폰 번호</Form.Label>
                     <Col sm={10}><Form.Control type="text" placeholder="핸드폰 번호(-제외)를 입력하세요" /></Col>
                 </Form.Group>
                 <br/>
-                <Form.Group as={Row} className="mb-3" controlId="formGroupEmail">
+                <Form.Group as={Row} className="mb-3" controlId="formGroupBirthday">
                     <Form.Label column sm={2}>생년월일</Form.Label>
                     <Col sm={10}><Form.Control type="date" /></Col>
                 </Form.Group>
