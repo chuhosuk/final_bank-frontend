@@ -8,7 +8,7 @@ function PdLoan () {
        <div className="container">
               <img src={pd_fudHaving} alt="" /><br />
              SELECT * FROM loan_product;
-             <PdLoanDetail />
+                <PdLoanDetail />
              <br />
              <br />
              <br />

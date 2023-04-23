@@ -77,9 +77,5 @@ class LoanComponentAdd extends Component{
         )
     }
 }
-const style =  {
-    display: 'flex',
-    justifyContent: 'center'
-}
 
 export default LoanComponentAdd;
