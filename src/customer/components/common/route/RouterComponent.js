@@ -25,10 +25,10 @@ import PdDeposit from "../../contents/product/PdDeposit";
 import PdSaving from "../../contents/product/PdSaving";
 import PdAccount from "../../contents/product/PdAccount";
 import PdLoan from "../../contents/product/PdLoan";
-import OpenFund from "../../contents/product/OpenFund";
-import PdFundList from "../../contents/product/PdFundList";
-import PdFundHaving from "../../contents/product/PdFundHaving";
-import PdFundDetail from "../../contents/product/PdFundDetail";
+import OpenFund from "../../contents/product/fund/OpenFund";
+import PdFundList from "../../contents/product/fund/PdFundList";
+import PdFundHaving from "../../contents/product/fund/PdFundHaving";
+import PdFundDetail from "../../contents/product/fund/PdFundDetail";
 // 환율
 import ExchangeRate from "../../contents/exchangerate/ExchangeRate";
 import ExchangeRateCal from "../../contents/exchangerate/ExchangeRateCal";
@@ -40,6 +40,10 @@ import Chatting from "../../contents/cscenter/Chatting";
 import Mypage from "../../contents/mypage/Mypage";
 import Money from "../../contents/mypage/Money";
 import Layout from "../Layout";
+// 로그인
+import Login from "../../common/login/Login";
+// 회원가입
+import Join from "../../common/join/Join";
 
 
 
@@ -90,6 +94,11 @@ const AppRouter = () => {
             {/* 마이페이지 */}
             <Route path="/mypage/mypage" Component={Mypage} />
             <Route path="/mypage/money" Component={Money} />
+
+            {/* 로그인 / 회원가입 */}
+            <Route path="/login/login" Component={Login} />
+            <Route path="/join/join" Component={Join} />
+
         </Routes>
     )
 }

@@ -1,6 +1,6 @@
 import { Component } from "react";
 import {Route,Routes} from 'react-router-dom';
-import MainComponents from "../MainComponents";
+
 import SavingComponent from "../../contents/product/saving/SavingComponent";
 import DepositComponent from "../../contents/product/deposit/DepositComponent";
 import AccountComponent from "../../contents/acSearch/AccountComponent";
@@ -21,18 +21,17 @@ import LoanComponentEdit from "../../contents/product/loan/LoanComponentEdit";
 import LoanComponent from "../../contents/product/loan/LoanComponent";
 import SavingComponentDetail from "../../contents/product/saving/SavingComponentDetail";
 import SavingComponentEdit from "../../contents/product/saving/SavingComponentEdit";
-import SavingComponentAdd from "../../contents/product/saving/SavingComponetAdd";
+import SavingComponentAdd from "../../contents/product/saving/SavingComponentAdd";
 import NoticeAddComponent from "../../contents/csCenter/NoticeAddComponent";
 import NoticeDetailCoponent from "../../contents/csCenter/NoticeDetailComponent";
 import Layout from "../Layout";
-
 
 class RouteComponent extends Component{
     render(){
         return(
             <Routes path = "/admin/*" Component={Layout}>
                 {/* contents경로에서 컴포넌트 만들면 import 해서 추가하기 */}
-s                {/* 상품관리 */}
+                {/* 상품관리 */}
                 <Route path = "/product/loan" Component={LoanComponent} />
                 <Route path = "/product/loan/add" Component={LoanComponentAdd}/>
                 <Route path = "/product/loan/detail" Component={LoanComponentDetail}/>
@@ -67,5 +66,4 @@ s                {/* 상품관리 */}
         )
     }
 }
-
 export default RouteComponent;
