@@ -1,19 +1,32 @@
 // 자동이체 조회
 import React from "react";
-import autoTrans from '../../../../customer/resources/img/2-3.png';
+import Table from 'react-bootstrap/Table';
+import Form from 'react-bootstrap/Form';
+import RadioCheck from "./RadioCheck";
+import Button from 'react-bootstrap/Button';
 
 function AutoTrans () {
     return (
         <div className="container">
-            <img src={autoTrans} alt="" />
-            <br />
-            SELECT at.at_num, a.acNumber, a.a_depositNum, a.a_depositBank, a.a_depositAmount, at.at_date, at.at_result <br />
-            FROM auto_transfer_tbl at, auto_transferReg_tbl a, account_tbl ac<br />
-            WHERE at.a_num = a.a_num<br />
-            AND a.acNumber = ac.acNumber<br />
-            AND ac.id = 'hong1234'; --자동이체 등록내역<br />
-            <br />
-            <br />
+            <hr />
+            <Table striped="columns">
+                <tbody>
+                    <tr>
+                        <td>계좌번호</td>
+                        <td><Form.Select aria-label="Floating label select example">
+                                <option value="1">000</option>
+                                <option value="2">1111</option>
+                            </Form.Select></td>
+                        <td>조회구분</td>
+                        <td><RadioCheck/></td>
+                    </tr>
+                    <tr>
+                        <td colSpan={4} align="center">
+                            <a href="/customer/transfer/auto_trans_check"><Button variant="primary" size="lg">조회</Button></a>
+                        </td>
+                    </tr>
+                </tbody>
+            </Table>
         </div>
     )
 }

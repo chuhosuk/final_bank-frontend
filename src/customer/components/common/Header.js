@@ -9,8 +9,9 @@ import '../../resources/vendor/swiper/swiper-bundle.min.css'
 import { Link } from 'react-router-dom';
 
 // npm i bootstrap@5.2.3
-// npm install @mui/material @emotion/react @emotion/stylednpm install react-bootstrap bootstrap
+// npm install @mui/material @emotion/react @emotion/stylednpm
 // npm install react-bootstrap bootstrap
+// npm install @mui/joy @emotion/react @emotion/styled
 
 function Header () {
     return (
@@ -36,7 +37,7 @@ function Header () {
                                     </li>
                                     <li><a href="/customer/account/sleep">휴면계좌조회</a></li>
                                 </ul>
-                            </li>
+</li>
                             <li className="dropdown"><a href="/customer/trans_deposit"><span>이체</span> <i className="bi bi-chevron-down"></i></a>
                                 <ul>
                                     <li><a href="/customer/transfer/trans_deposit">계좌이체</a></li>
