@@ -1,6 +1,6 @@
 // 펀드 상품 > 펀드리스트
 import React from "react";
-import pd_fundList from  '../../../../customer/resources/img/3-fundList.png';
+import pd_fundList from  '../../../../../customer/resources/img/3-fundList.png';
 
 function PdFundList () {
     return (

@@ -3,7 +3,6 @@ import {List, ListItem, Box,ListSubheader, ListItemButton} from '@mui/joy';
 // style={{width: '40%'}}
 
 function MainBoard() {
-    
     return (
         <div className='container' >
             <div style={{display: 'flex'}}>

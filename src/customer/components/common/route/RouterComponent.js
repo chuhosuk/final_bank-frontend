@@ -18,10 +18,10 @@ import PdDeposit from "../../contents/product/PdDeposit";
 import PdSaving from "../../contents/product/PdSaving";
 import PdAccount from "../../contents/product/PdAccount";
 import PdLoan from "../../contents/product/PdLoan";
-import OpenFund from "../../contents/product/OpenFund";
-import PdFundList from "../../contents/product/PdFundList";
-import PdFundHaving from "../../contents/product/PdFundHaving";
-import PdFundDetail from "../../contents/product/PdFundDetail";
+import OpenFund from "../../contents/product/fund/OpenFund";
+import PdFundList from "../../contents/product/fund/PdFundList";
+import PdFundHaving from "../../contents/product/fund/PdFundHaving";
+import PdFundDetail from "../../contents/product/fund/PdFundDetail";
 // 환율
 import ExchangeRate from "../../contents/exchangerate/ExchangeRate";
 import ExchangeRateCal from "../../contents/exchangerate/ExchangeRateCal";

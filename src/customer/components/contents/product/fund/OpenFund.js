@@ -1,6 +1,6 @@
 // 펀드 상품 > 펀드 계좌개설
 import React from "react";
-import openfund from '../../../../customer/resources/img/3-56.png';
+import openfund from '../../../../../customer/resources/img/3-56.png';
 
 function OpenFund () {
     return (
