@@ -13,6 +13,13 @@ import TransDeposit from "../../contents/transfer/TransDeposit";
 import AddAutoTrans from "../../contents/transfer/AddAutoTrans";
 import AutoTrans from "../../contents/transfer/AutoTrans";
 import TransLimit from "../../contents/transfer/TransLimit";
+import TransLimitAccept from "../../contents/transfer/TransLimitAccept";
+import TransReConfirm from "../../contents/transfer/TransReConfirm";
+import TransAccept from "../../contents/transfer/TransAccept";
+import AutoTransReConfirm from "../../contents/transfer/AutoTransReConfirm";
+import AutoTransAccept from "../../contents/transfer/AutoTransAccept";
+import AutoTransCheck from "../../contents/transfer/AutoTransCheck";
+import AutoTransDetail from "../../contents/transfer/AutoTransDetail";
 // 상품
 import PdDeposit from "../../contents/product/PdDeposit";
 import PdSaving from "../../contents/product/PdSaving";
@@ -27,11 +34,15 @@ import ExchangeRate from "../../contents/exchangerate/ExchangeRate";
 import ExchangeRateCal from "../../contents/exchangerate/ExchangeRateCal";
 // 고객센터
 import CsBoard from "../../contents/cscenter/CsBoard";
+import CsBoardDetail from "../../contents/cscenter/CsBoardDetail";
 import Chatting from "../../contents/cscenter/Chatting";
 // 마이페이지
 import Mypage from "../../contents/mypage/Mypage";
 import Money from "../../contents/mypage/Money";
 import Layout from "../Layout";
+
+
+
 
 const AppRouter = () => {
     return(
@@ -49,8 +60,14 @@ const AppRouter = () => {
             <Route path="/transfer/trans_deposit" Component={TransDeposit} />
             <Route path="/transfer/add_auto_trans" Component={AddAutoTrans} />
             <Route path="/transfer/auto_trans" Component={AutoTrans} />
+            <Route path="/transfer/auto_trans_check" Component={AutoTransCheck} />
+            <Route path="/transfer/auto_trans_reConfirm" Component={AutoTransReConfirm} />
             <Route path="/transfer/trans_limit" Component={TransLimit} />
-
+            <Route path="/transfer/trans_limit_accept" Component={TransLimitAccept} />
+            <Route path="/transfer/trans_reConfirm" Component={TransReConfirm} />
+            <Route path="/transfer/auto_trans_accept" Component={AutoTransAccept} />
+            <Route path="/transfer/trans_accept" Component={TransAccept} />
+            <Route path="/transfer/auto_trans_detail" Component={AutoTransDetail} />
             {/* 상품 */}
             <Route path="/product/pdDeposit" Component={PdDeposit} />
             <Route path="/product/pdSaving" Component={PdSaving} />
@@ -67,6 +84,7 @@ const AppRouter = () => {
 
             {/* 고객센터 */}
             <Route path="/cscenter/cs_board" Component={CsBoard} />
+            <Route path="/cscenter/cs_board_detail" Component={CsBoardDetail}/>
             <Route path="/cscenter/chatting" Component={Chatting} />
 
             {/* 마이페이지 */}

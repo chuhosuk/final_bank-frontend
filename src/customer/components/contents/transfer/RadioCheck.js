@@ -23,7 +23,7 @@ function RadioCheck() {
           <Form.Check
             inline
             label="해지"
-            name="group1"
+            name="group1" 
             type={type}
             id={`inline-${type}-3`}
           />
