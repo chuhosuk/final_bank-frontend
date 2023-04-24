@@ -1,4 +1,5 @@
-import { Table, Tab, Tabs, Row, Col, Container, Button, Card, Stack, Form} from 'react-bootstrap';
+// 계산기
+import {Tab, Tabs, Row, Col, Button, Stack, Form} from 'react-bootstrap';
 import React, { useState } from 'react';
 import CalcResult from './CalcResult';
 
@@ -27,7 +28,7 @@ const Calculator1 = () => {
         });
     }
    
-    { /* 계산하기 버튼 */}
+    { /* 계산하기 */}
     const calculator = () => {
         setShowResult(true);
 

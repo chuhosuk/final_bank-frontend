@@ -1,46 +1,13 @@
-import { Table, Tab, Tabs, Row, Col, Container, Button, Card, Stack, Form} from 'react-bootstrap';
+import { Table, Tab, Tabs, Row, Col, Container, Button, Card, Stack } from 'react-bootstrap';
 import PdLoanInfo from './PdLoanInfo';
 import { SlCalender, SlGraph } from "react-icons/sl";
 import { BsCash } from "react-icons/bs";
-import '../../../../resources/css/PdLoanStyle.css';
-import React, { useState } from 'react';
+import '../../../resources/css/PdLoanStyle.css';
+import React from 'react';
+
 import Calculator1 from './Calculator1';
 
 function PdLoanDetail() {
-
-  const [inputs, setInputs] = useState({
-      amount: "",
-      period: "",
-      rate: "",
-  });
-  
-  const onChange = (e) => {
-      const value = e.target.value;
-      const id = e.target.id;
-
-      setInputs({
-        ...inputs,
-        [id]: value,
-      });
-  }
-
-  const calculator = () => {
-
-      const newData = {
-        amount: inputs.amount,
-        period: inputs.period,
-        rate: inputs.rate,
-      }
-
-      console.log(newData);
-
-      setInputs({ 
-        amount: "", 
-        period: "", 
-        rate: "" 
-      })
-      
-  }
 
   return (
     <Container>

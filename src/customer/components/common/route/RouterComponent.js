@@ -38,6 +38,8 @@ import DepositApplication from "../../contents/product/deposit/DepositApplicatio
 
 // 상품 | 대출상품
 import PdLoan from "../../contents/product/loan/PdLoan";
+import PdLoanDetail from '../../contents/product/loan/PdLoanDeail';
+
 // 상품|펀드상품
 import OpenFund from "../../contents/product/fund/OpenFund";
 import PdFundList from "../../contents/product/fund/PdFundList";
@@ -63,6 +65,7 @@ import Layout from "../Layout";
 import MainLayout from "../main/MainLayout";
 const AppRouter = () => {
     return(
+
         <Routes  path="/customer/*" Component={Layout} >
             {/* 고객 메인페이지 */}
             <Route path="/*" Component={MainLayout} />
@@ -73,6 +76,7 @@ const AppRouter = () => {
             <Route path="/account/deposit" Component={Deposit} />
             <Route path="/account/saving" Component={Saving} />
             <Route path="/account/sleep" Component={Sleep} />
+
             {/* 대출조회 */}
             <Route path="/account/loan_state" Component={LoanState} />
             <Route path="/account/loan" Component={Loan} />
@@ -81,6 +85,7 @@ const AppRouter = () => {
             <Route path="/transfer/trans_deposit" Component={TransDeposit} />
             <Route path="/transfer/trans_reConfirm" Component={TransReConfirm} />
             <Route path="/transfer/trans_accept" Component={TransAccept} />
+
             {/* 자동이체 */}
             <Route path="/transfer/add_auto_trans" Component={AddAutoTrans} />
             <Route path="/transfer/auto_trans" Component={AutoTrans} />
@@ -88,10 +93,15 @@ const AppRouter = () => {
             <Route path="/transfer/auto_trans_reConfirm" Component={AutoTransReConfirm} />
             <Route path="/transfer/auto_trans_detail" Component={AutoTransDetail} />
             <Route path="/transfer/auto_trans_accept" Component={AutoTransAccept} />
+
             {/* 이체한도 */}
             <Route path="/transfer/trans_limit" Component={TransLimit} />
             <Route path="/transfer/trans_limit_accept" Component={TransLimitAccept} />
-            
+            <Route path="/transfer/trans_reConfirm" Component={TransReConfirm} />
+            <Route path="/transfer/auto_trans_accept" Component={AutoTransAccept} />
+            <Route path="/transfer/trans_accept" Component={TransAccept} />
+            <Route path="/transfer/auto_trans_detail" Component={AutoTransDetail} />
+
             {/* 상품(입출금) */}
             <Route path="/product/pdAccount" Component={PdAccount} />
             <Route path="/product/account/application" Component={ProductApplication} />
@@ -103,6 +113,8 @@ const AppRouter = () => {
             <Route path="/product/saving/application" Component={SavingApplication} />
             {/* 상품(대출) */}
             <Route path="/product/pdLoan" Component={PdLoan} />
+            <Route path="/product/pdLoanDetail" Component={PdLoanDetail} />
+
             {/* 상품(펀드) */}
             <Route path="/product/fund/open_fund" Component={OpenFund} />
             <Route path="/product/fund/pdfundList" Component={PdFundList} />
