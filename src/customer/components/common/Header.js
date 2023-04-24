@@ -1,4 +1,7 @@
 import React from 'react';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPiggyBank} from "@fortawesome/free-solid-svg-icons";
+
 import '../../resources/css/style.css';
 
 import 'bootstrap';
@@ -19,69 +22,144 @@ function Header () {
         <div> {/* className='fixed-top' */}
             <header id="header" className="d-flex align-items-center">
                 <div className="container d-flex align-items-center">
-
-                    <h1 className="logo me-auto"><a href="/main">MUSICBANK</a></h1>
+                    <h1 className="logo me-auto">
+                        <Link to ="/customer/">PIG BANK<FontAwesomeIcon icon={faPiggyBank}/></Link>
+                    </h1>
                     <nav id="navbar" className="navbar">
                         <ul>
-                            <li className="dropdown"><a href="/customer/account/all"><span>조회</span> <i className="bi bi-chevron-down"></i></a>
+                            <li className="dropdown">
+                                <Link to ="/customer/account/all">
+                                    <span>조회</span> 
+                                    <i className="bi bi-chevron-down"></i>
+                                </Link>
                                 <ul>
-                                    <li><a href="/customer/account/all">전체계좌</a></li>
-                                    <li><a href="/customer/account/account">입출금 통장조회</a></li>
-                                    <li><a href="/customer/account/deposit">예금조회</a></li>
-                                    <li><a href="/customer/account/saving">적금조회</a></li>
-                                    <li className="dropdown"><a href="#!"><span>대출조회</span> <i className="bi bi-chevron-right"></i></a>
+                                    <li>
+                                        <Link to ="/customer/account/all">전체계좌</Link>
+                                    </li>
+                                    <li>
+                                        <Link to ="/customer/account/account">입출금 통장조회</Link>
+                                    </li>
+                                    <li>
+                                        <Link to ="/customer/account/deposit">예금조회</Link>
+                                    </li>
+                                    <li>
+                                        <Link to ="/customer/account/saving">적금조회</Link>
+                                    </li>
+                                    <li className="dropdown">
+                                        <Link to ="#!">
+                                            <span>대출조회</span>
+                                            <i className="bi bi-chevron-right"></i>
+                                        </Link>
                                         <ul>
-                                            <li><a href="/customer/account/loan_state">대출심사결과조회</a></li>
-                                            <li><a href="/customer/account/loan">대출계좌조회</a></li>
+                                            <li>
+                                                <Link to ="/customer/account/loan_state">대출심사결과조회</Link>
+                                            </li>
+                                            <li>
+                                                <Link to ="/customer/account/loan">대출계좌조회</Link>
+                                            </li>
                                         </ul>
                                     </li>
-                                    <li><a href="/customer/account/sleep">휴면계좌조회</a></li>
-                                </ul>
-</li>
-                            <li className="dropdown"><a href="/customer/trans_deposit"><span>이체</span> <i className="bi bi-chevron-down"></i></a>
-                                <ul>
-                                    <li><a href="/customer/transfer/trans_deposit">계좌이체</a></li>
-                                    <li className="dropdown"><a href="/customer/transfer/auto_trans!"><span>자동이체</span> <i className="bi bi-chevron-right"></i></a>
-                                        <ul>
-                                            <li><a href="/customer/transfer/add_auto_trans">자동이체등록</a></li>
-                                            <li><a href="/customer/transfer/auto_trans">자동이체조회</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="/customer/transfer/trans_limit">이체한도 조회</a></li>
-                                </ul>
-                            </li>
-                            <li className="dropdown"><a href="#!"><span>상품</span> <i className="bi bi-chevron-down"></i></a>
-                                <ul>
-                                    <li><Link to ="/customer/product/pdDeposit">예금</Link></li>
-                                    <li><a href="/customer/product/pdSaving">적금</a></li>
-                                    <li><a href="/customer/product/pdAccount">입출금</a></li>
-                                    <li><a href="/customer/product/pdLoan">대출</a></li>
-                                    <li className="dropdown"><a href="/customer/product/pdfundList"><span>펀드</span> <i className="bi bi-chevron-right"></i></a>
-                                        <ul>
-                                            <li><a href="/customer/product/open_fund">펀드계좌개설</a></li>
-                                            <li><a href="/customer/product/pdfundList">펀드리스트</a></li>
-                                            <li><a href="/customer/product/pdfundHaving">펀드보유내역</a></li>
-                                            <li><a href="/customer/product/pdfundDetail">펀드거래내역</a></li>
-                                        </ul>
+                                    <li>
+                                        <Link to ="/customer/account/sleep">휴면계좌조회</Link>
                                     </li>
                                 </ul>
                             </li>
-                            <li className="dropdown"><a href="/customer/exchangerate/exchange"><span>환율</span> <i className="bi bi-chevron-down"></i></a>
+                            <li className="dropdown">
+                                <Link to ="/customer/trans_deposit">
+                                    <span>이체</span> 
+                                    <i className="bi bi-chevron-down"></i>
+                                </Link>
                                 <ul>
-                                    <li><a href="/customer/exchangerate/exchange">환율조회</a></li>
-                                    <li><a href="/customer/exchangerate/exchange_cal">환율계산기</a></li>
+                                    <li>
+                                        <Link to ="/customer/transfer/trans_deposit">계좌이체</Link>
+                                    </li>
+                                    <li className="dropdown">
+                                        <Link to ="/customer/transfer/auto_trans!">
+                                            <span>자동이체</span> 
+                                            <i className="bi bi-chevron-right"></i>
+                                        </Link>
+                                        <ul>
+                                            <li>
+                                                <Link to ="/customer/transfer/add_auto_trans">자동이체등록</Link>
+                                            </li>
+                                            <li>
+                                                <Link to ="/customer/transfer/auto_trans">자동이체조회</Link>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <Link to ="/customer/transfer/trans_limit">이체한도 조회</Link>
+                                    </li>
                                 </ul>
                             </li>
-                            <li className="dropdown"><a href="/cs_board"><span>고객센터</span> <i className="bi bi-chevron-down"></i></a>
+                            <li className="dropdown">
+                                <Link to ="#!">
+                                    <span>상품</span> 
+                                    <i className="bi bi-chevron-down"></i>
+                                </Link>
                                 <ul>
-                                    <li><a href="/customer/cscenter/cs_board">공지사항</a></li>
-                                    <li><a href="/customer/cscenter/chatting">채팅상담</a></li>
+                                    <li>
+                                        <Link to ="/customer/product/pdDeposit">예금</Link>
+                                    </li>
+                                    <li>
+                                        <Link to ="/customer/product/pdSaving">적금</Link>
+                                    </li>
+                                    <li>
+                                        <Link to ="/customer/product/pdAccount">입출금</Link>
+                                    </li>
+                                    <li>
+                                        <Link to ="/customer/product/pdLoan">대출</Link>
+                                    </li>
+                                    <li className="dropdown">
+                                        <Link to ="/customer/product/fund/pdfundList">
+                                            <span>펀드</span> 
+                                            <i className="bi bi-chevron-right"></i>
+                                        </Link>
+                                        <ul>
+                                            <li>
+                                                <Link to ="/customer/product/fund/open_fund">펀드계좌개설</Link>
+                                            </li>
+                                            <li>
+                                                <Link to ="/customer/product/fund/pdfundList">펀드리스트</Link>
+                                            </li>
+                                            <li>
+                                                <Link to ="/customer/product/fund/pdfundHaving">펀드보유내역</Link>
+                                            </li>
+                                            <li>
+                                                <Link to ="/customer/product/fund/pdfundDetail">펀드거래내역</Link>
+                                            </li>
+                                        </ul>
+                                    </li>
                                 </ul>
                             </li>
-                            <li className="dropdown"><a href="/customer/mypage/mypage"><span>마이페이지</span> <i className="bi bi-chevron-down"></i></a>
+                            <li className="dropdown">
+                                <Link to ="/customer/exchangerate/exchange">
+                                    <span>환율</span> 
+                                    <i className="bi bi-chevron-down"></i>
+                                </Link>
                                 <ul>
-                                    <li><a href="/customer/mypage/mypage">내 정보</a></li>
-                                    <li><a href="/customer/mypage/money">자산관리</a></li>
+                                    <li>
+                                        <Link to ="/customer/exchangerate/exchange">환율조회</Link>
+                                    </li>
+                                    <li>
+                                        <Link to ="/customer/exchangerate/exchange_cal">환율계산기</Link>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li className="dropdown">
+                                <Link to ="/cs_board">
+                                    <span>고객센터</span> 
+                                    <i className="bi bi-chevron-down"></i>
+                                </Link>
+                                <ul>
+                                    <li><Link to ="/customer/cscenter/cs_board">공지사항</Link></li>
+                                    <li><Link to ="/customer/cscenter/chatting">채팅상담</Link></li>
+                                </ul>
+                            </li>
+                            <li className="dropdown"><Link to ="/customer/mypage/mypage"><span>마이페이지</span> <i className="bi bi-chevron-down"></i></Link>
+                                <ul>
+                                    <li><Link to ="/customer/mypage/mypage">내 정보</Link></li>
+                                    <li><Link to ="/customer/mypage/money">자산관리</Link></li>
                                 </ul>
                             </li>
                         </ul>

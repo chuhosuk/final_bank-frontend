@@ -1,9 +1,6 @@
 import { BrowserRouter, Route,Routes,Link } from "react-router-dom";
 import LayoutC from "./customer/components/common/Layout";
 import LayoutA from "./admin/components/common/Layout";
-import ProductApplication from "./customer/components/contents/product/product-application/ProductApplication";
-import SavingApplication from "./customer/components/contents/product/product-application/SavingApplication";
-import DepositApplication from "./customer/components/contents/product/product-application/DepositApplication";
 
 function App() {
   return (
